@@ -2,24 +2,28 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    line-height:1.6;
-}
-
-/* Header */
-header{
-    background:#1e3a8a;
+    background:#0f172a;
     color:white;
-    padding:15px 50px;
 }
 
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:20px 10%;
+    background:#111827;
+}
+
+.logo{
+    color:white;
+}
+
+.logo span{
+    color:#38bdf8;
 }
 
 nav ul{
@@ -28,5 +32,133 @@ nav ul{
 }
 
 nav ul li{
-    margin-left:20px;
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:90vh;
+    gap:60px;
+    padding:20px;
+}
+
+.hero img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+}
+
+.hero-text h1{
+    font-size:50px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text h3{
+    margin:15px 0;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.skill-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px 40px;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.project-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.project-card{
+    width:300px;
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+}
+
+.edu-card{
+    text-align:center;
+    background:#1e293b;
+    padding:30px;
+    border-radius:10px;
+}
+
+#contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:35px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
 }
